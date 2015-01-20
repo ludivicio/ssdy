@@ -127,12 +127,12 @@ body{
 
 .footer {
 	margin-top: 35px;
-	/*height: 350px;*/
+	height: 500px;
 	background-color: #474644;
 }
 
 .inner-footer {
-	padding: 30px 0;
+	margin-top: 100px;
 }
 
 .footer-left {
@@ -157,7 +157,8 @@ body{
 }
 
 .footer-center {
-	
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
 }
 
 .footer-center ul li {
@@ -172,6 +173,14 @@ body{
 .footer-right {
 	font-size: 20px;
 	line-height: 35px;
+}
+
+.footer-right .contact {
+	padding-left: 50px;
+}
+.footer-right dt, .footer-right dd {
+	line-height: 35px;
+	font-size: 22px;
 }
 
 
