@@ -4,22 +4,31 @@ body{
 	height: 100%;
 	font: 12px/100% '微软雅黑', Verdana, Geneva, sans-serif;
 	color: #666;
-	border-top: 3px solid #eee;  
-	padding-top: 37px;
 	-webkit-font-smoothing: antialiased;
 }
 
 .clear {
 	clear: both;
 }
+
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
 .header {
 	width: 100%;
 	height: 180px;
+	background-color: #9DC1D5;
 	/*border-bottom: 1px solid #222222;*/
 }
 
 .top {
-	background-color: white;
 	position: relative;
 }
 
@@ -30,66 +39,106 @@ body{
 
 }
 
-.info .qq {
-	float: left;
-	width: 28px;
-	height: 28px;
-	background: url(../image/qq.png);
+.info .mobile {
+	float:left;
+	margin-right: 10px;
+	vertical-align: middle;
+	line-height: 20px;
+	height: 20px;
+	font-size: 14px;
+	color: #FAFAFA;
 }
 
 .info .weibo {
-	float: left;
-	width: 28px;
-	height: 28px;
-	margin-left: 10px;
-	background: url(../image/weibo.png);
+	float:left;
+	margin-left: 15px;
+	vertical-align: middle;
+	line-height: 20px;
+	height: 20px;
+	font-size: 14px;
 }
 
+.info .weibo a, .info .weibo a:hover {
+	color:#FAFAFA;
+}
+
+.info img {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
 
 .logo {
 	float:left;
-	width: 100px;
+	/*width: 150px;*/
 	height: 100px;
+	line-height: 100px;
 	margin-top: 55px;
-	background: url(../image/logo.png) no-repeat;
+	vertical-align: middle;
+	/*background: url(../image/logo.png) no-repeat;*/
+}
+
+.logo img {
+	width: 150px;
+	height: 100px;
+}
+.logo span {
+	font-size: 30px;
+	line-height: 100px;
+	height: 100px;
+	color: #006E98;
 }
 
 .banner {
 	float:right;
 	margin-right:20px;
-	margin-top: 75px;
-	line-height: 80px;
-	height: 80px;
+	margin-top: 65px;
+	line-height: 90px;
+	height: 90px;
 }
 .banner .nav > li {
 	margin-left: 20px;
 }
 .banner .nav > li > a {
   margin: auto;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+  font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  line-height: 80px;
+  line-height: 90px;
   padding:0;
   /*padding: 30px 0 32px;*/
   display: block;
   position: relative;
   z-index: 20;
-  
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
+  color: #006E98;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
 }
 
+.banner .nav > li.active > a {
+	color: #FFFFFF;
+}
+
+/*.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	background-color: #428bca;
+}*/
 
 .wrapper {
 	
 }
 
+
 .flip {
-	height: 500px;
-	background-color: gray;
+	/*height: 500px;*/
+	background-color: #0278BB;
+}
+
+.flip .carousel-inner img {
+	margin: auto;
 }
 
 .inner-content {
@@ -106,8 +155,15 @@ body{
 	padding: 0;
 }
 
-.left-content .contact {
+.left-content .contact-us {
 	margin-top: 30px;
+}
+.left-content .contact-us p {
+	height: 25px;
+	line-height: 25px;
+}
+.left-content .contact-us p span{
+	margin-left: 20px;
 }
 
 .right-content {
@@ -116,27 +172,45 @@ body{
 }
 
 
-.sample {
-	margin-top: 35px;
-	
+.success-case {
+	margin-top: 30px;
+	padding: 30px 0 50px 0;
+	background-color: #F4F4F4;
 }
 
-#case {
-	margin-top: 50px;
+.success-case img, .success-case img:hover {
+	border: 1px solid #BDBDBD;
+	cursor: pointer;
+}
+
+/*.case {
+	padding: 20px 0 50px 0;
+	font-size: 35px;
+}*/
+
+.shadow {
+    -moz-box-shadow: 3px 3px 4px #555;
+    -webkit-box-shadow: 3px 3px 4px #555;
+    box-shadow: 3px 3px 4px #555;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#555555)";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#555555');
 }
 
 .footer {
-	margin-top: 35px;
-	height: 500px;
+/*	margin-top: 35px;*/
 	background-color: #474644;
 }
 
 .inner-footer {
-	margin-top: 100px;
+	/*margin: 50px 0;*/
+	/*height: 300px;*/
+	padding: 100px 0;
 }
 
 .footer-left {
-
+	height: 100%;
 }
 
 .footer-left .logo {
@@ -146,46 +220,111 @@ body{
 
 .footer-left .name {
 	float:left;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 100px;
 }
 
 .footer-left .intro {
 	margin-top: 10px;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 35px;
 }
 
 .footer-center {
+	height: 100%;
 	border-left: 1px solid #666666;
 	border-right: 1px solid #666666;
 }
 
 .footer-center ul li {
 	text-align: center;
-	font-size: 20px;
-	line-height: 45px;
+	font-size: 16px;
+	line-height: 55px;
 }
 .footer-center ul li a {
 	color: #666666;
 }
 
 .footer-right {
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 35px;
 }
 
 .footer-right .contact {
-	padding-left: 50px;
+	/*padding-left: 50px;*/
 }
-.footer-right dt, .footer-right dd {
+
+
+/* 品牌服务 services.html */
+.service {
+	padding: 30px 0 50px 0;
+}
+
+.item-block {
+	height: 250px;
+	margin: 20px 0;
+	border: 1px solid #ECECEC;
+	background-color: #9DC1D5;
+}
+
+.item-block ul li {
+	font-size: 15px;
+	height: 35px;
 	line-height: 35px;
-	font-size: 22px;
 }
 
 
+/* 经典案例 case.html */
+
+.case {
+	margin-top: 30px;
+	padding: 30px 0 50px 0;
+}
+
+.case img, .case img:hover {
+	border: 1px solid #BDBDBD;
+	cursor: pointer;
+}
+
+/*.case p {
+	height: 45px;
+	line-height: 45px;
+	font-size: 25px;
+}*/
+
+/* 核心团队 term.html */
 
 
+
+/* 联系我们 contact.html */
+.contact-content {
+
+	padding: 50px 0;
+}
+.leave-message {
+	float:left;
+	margin-bottom: 200px;
+}
+
+.leave-message p {
+	font-size: 25px;
+	padding: 25px 0;
+}
+
+.contact-info {
+	float:left;
+}
+.contact-info p.title {
+	font-size: 25px;
+	padding: 25px 0;
+}
+.contact-info dl {
+	font-size: 16px;
+}
+.contact-info dl dt, .contact-info dl dd {
+	height: 35px;
+	line-height: 35px;
+}
 
 
 

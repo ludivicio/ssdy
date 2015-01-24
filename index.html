@@ -14,13 +14,6 @@
 	<!-- Bootstrap -->
 	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 
-<!-- Important Owl stylesheet -->
-<link rel="stylesheet" href="static/css/owl.carousel.css">
- 
-<!-- Default Theme -->
-<link rel="stylesheet" href="static/css/owl.theme.css">
-<script src="static/js/owl.carousel.js"></script>
-
 </head>
 
 <body>
@@ -28,21 +21,25 @@
 	<div class="header">
 		 <div class="container">
             <div class="row">
-				<div class="top">
+				<div class="top col-xs-offset-1 col-xs-10">
 					<div class="info">
 						<h4>
-							<div class="qq"></div>
-							<div class="weibo"></div>
+							<p class="mobile"><img src="static/image/400.png" />400-823-823</p>
+							<p class="weibo"><img src="static/image/weibo.png" />
+								<a href="">乡念水世界</a></p>
 						</h4>
 					</div>
-					<div class="logo"></div>
+					<div class="logo">
+						<img src = "static/image/logo.png"/>
+						<span>盛世大元</span>
+					</div>
 					<div class="banner">
 						<ul class="nav nav-pills" role="tablist">
-						  	<li role="presentation" class="active"><a href="#">首页</a></li>
-						  	<li role="presentation"><a href="#">品牌服务</a></li>
-						  	<li role="presentation"><a href="#">经典案例</a></li>
-						  	<li role="presentation"><a href="#">核心团队</a></li>
-						  	<li role="presentation"><a href="#">联系我们</a></li>
+						  	<li role="presentation" class="active"><a href="index.html">首页</a></li>
+						  	<li role="presentation"><a href="services.html">品牌服务</a></li>
+						  	<li role="presentation"><a href="case.html">经典案例</a></li>
+						  	<li role="presentation"><a href="term.html">核心团队</a></li>
+						  	<li role="presentation"><a href="contact.html">联系我们</a></li>
 						</ul>
 					</div>
 				</div>
@@ -51,110 +48,139 @@
 	</div>
 	
 	<div class="wrapper">
+
+		<div class="flip">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			  <!-- Carousel items -->
+			  <div class="carousel-inner">
+			    <div class="active item"><img src="static/image/image1.png" /></div>
+			    <div class="item"><img src="static/image/image2.png" /></div>
+			    <div class="item"><img src="static/image/image3.png" /></div>
+			  </div>
+			  <!-- Carousel nav -->
+			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+
 		<div class="container">
             <div class="row">
-				<div class="flip">
-					<div id="myCarousel" class="carousel slide">
+				
+				<!-- <div class="flip">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					  <ol class="carousel-indicators">
 					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					    <li data-target="#myCarousel" data-slide-to="1"></li>
 					    <li data-target="#myCarousel" data-slide-to="2"></li>
 					  </ol>
-					  <!-- Carousel items -->
+	
 					  <div class="carousel-inner">
-					    <div class="active item"><img src="static/image/image1.jpg" /></div>
-					    <div class="item"><img src="static/image/image2.jpg" /></div>
-					    <div class="item"><img src="static/image/image3.jpg" /></div>
+					    <div class="active item"><img src="static/image/image1.png" /></div>
+					    <div class="item"><img src="static/image/image2.png" /></div>
+					    <div class="item"><img src="static/image/image3.png" /></div>
 					  </div>
-					  <!-- Carousel nav -->
+			
 					  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 					  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>
-				</div>
-				<div class="inner-content">
-					<div class="left-content col-md-3 ">
-						<div class="col-md-10 login">
+				</div> -->
+
+				<div class="inner-content col-xs-offset-1 col-xs-10">
+					<div class="left-content col-xs-3">
+						
+						<!-- <div class="col-xs-10 login">
 							<form class="form-horizontal" role="form">
-							   <div class="form-group">
+							    <div class="form-group">
 							     
-							      <div class="col-md-12">
-							         <input type="text" class="form-control" placeholder="用户名">
-							      </div>
-							   </div>
-							   <div class="form-group">
-							      <div class="col-md-12">
-							         <input type="text" class="form-control" placeholder="密码">
-							      </div>
-							   </div>
-							   <div class="form-group">
-							      <div class="col-md-12">
-							         <button type="submit" class="btn btn-primary">登录</button>
-							      </div>
-							   </div>
+							      	<div class="col-xs-12">
+							         	<input type="text" class="form-control" placeholder="用户名">
+							      	</div>
+							    </div>
+							    <div class="form-group">
+							      	<div class="col-xs-12">
+							         	<input type="text" class="form-control" placeholder="密码">
+							      	</div>
+							    </div>
+							    <div class="form-group">
+							        <div class="col-xs-12">
+							            <button type="submit" class="btn btn-primary">登录</button>
+							        </div>
+							    </div>
 							</form>
 						</div>
-						<div class="col-md-12 contact">
-							<address>
-							  <strong>手机</strong><br>
-							  18642370111<br>
-							  <strong>固话</strong><br>
-							  0411-39192156<br>
-							  <strong>传真</strong><br>
-							  0411-39192157<br>
-							</address>
+						<div class="clear"></div>  -->
+						
+						<div class="contact-us">
+
+						
+							<h3>联系我们</h3>
+							<br/>
+							<p><strong>手机</strong><span>18642370111</span></p>
+							<p><strong>办公电话</strong><span>0411-39192156</span></p>
+							<p><strong>传真</strong><span>0411-39192157</span></p>
+							<p><strong>邮箱</strong><span>lifaguang@xnssj.com</span></p>
 							
 						</div>
 					</div>
-					<div class="right-content col-md-9">
+					<div class="right-content col-xs-9">
 						
 						<div>
-							<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;">
-    <span style="color: rgb(51, 51, 51);letter-spacing: 0;font-size: 12px;font-family: 宋体;background: rgb(247, 247, 247)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 20px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><span style="font-size: 20px; color: rgb(51, 51, 51); letter-spacing: 0px; background: rgb(247, 247, 247);">公司</span><span style="font-size: 20px; letter-spacing: 0px; background: rgb(255, 255, 255);">是一家专业的旅游景区策划、规划</span><span style="font-size: 20px; letter-spacing: 0px; background: rgb(255, 255, 255);">、管理、运营、营销一站式服务公司。</span><span style="font-size: 20px; letter-spacing: 0px; background: rgb(255, 255, 255);">目前已经开展的业务有旅游策划、旅游规划、主题景观设计、品牌策略咨询、旅游营销咨询。服务对象包括主题公园</span><span style="font-size: 20px; letter-spacing: 0px; background: rgb(255, 255, 255);">（水、陆）</span><span style="font-size: 20px; letter-spacing: 0px; background: rgb(255, 255, 255);">、区域开发、国家公园、风景名胜区、休闲度假区、旅游度假地产、主题商业地产等。</span></span>
-</p>
-<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;">
-    <span style="font-size: 20px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><span style="font-size: 20px; letter-spacing: 0px; background: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司拥有一支专业实战的品牌、营销团队，在国内知名景区从事<span style="font-size: 20px;">10</span><span style="font-size: 20px;">年以上旅游品牌、营销管理经验。服务过深圳欢乐谷、北京欢乐谷、东部华侨城、沈阳方特欢乐世界、大河马水上世界、抚顺热高乐园等主题乐园及水公园，创建一套以市场需求建公园、以现代理念管理公园的模式，帮助企业找到最合适的方式、方法和发展方向。选择我们就等于选择盈利。</span></span></span>
-</p>
-<p>
-    <br/>
-</p>
+							<p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;">
+							    <span style="font-size: 16px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; letter-spacing: 0px; background: rgb(255, 255, 255);">&nbsp; &nbsp; &nbsp; &nbsp;公司是一家专业的旅游景区策划、规划、管理、运营、营销一站式服务公司。目前已经开展的业务有旅游策划、旅游规划、主题景观设计、品牌策略咨询、旅游营销咨询。服务对象包括主题公园（水、陆）、区域开发、国家公园、风景名胜区、休闲度假区、旅游度假地产、主题商业地产等。</span>
+							</p>
+							<p style="margin-top: 0px; margin-bottom: 0px; line-height: 3em;">
+							    <span style="font-size: 16px; letter-spacing: 0px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司拥有一支专业实战的品牌、营销团队，在国内知名景区从事10年以上旅游品牌、营销管理经验。服务过深圳欢乐谷、北京欢乐谷、东部华侨城、沈阳方特欢乐世界、大河马水上世界、抚顺热高乐园等主题乐园及水公园，创建一套以市场需求建公园、以现代理念管理公园的模式，帮助企业找到最合适的方式、方法和发展方向。选择我们就等于选择盈利。</span>
+							</p>
+							<p>
+							    <br/>
+							</p>
 						</div>
-
 					</div>
 				</div>
 				<div class="clear"></div>
-				<div class="sample">
-					<h3>经典案例</h3>
+			</div>
+		</div>
+	<!-- </div>	 -->
+
+		<div class="success-case">
+
+			<div class="container">	
+
+				<div class="row">
 					
-					<div id="case" class="owl-carousel">
-					  <div><img src="static/image/demo/1.png" /></div>
-					  <div><img src="static/image/demo/2.png" /></div>
-					  <div><img src="static/image/demo/3.png" /></div>
-					  <div><img src="static/image/demo/4.png" /></div>
-					  <div><img src="static/image/demo/5.png" /></div>
-					  <div><img src="static/image/demo/6.png" /></div>
-					  <div><img src="static/image/demo/7.png" /></div>
-					  <div><img src="static/image/demo/8.png" /></div>
-					  <div><img src="static/image/demo/9.png" /></div>
-					  <div><img src="static/image/demo/10.png" /></div>
-					  
+					<div class="col-xs-offset-1 col-xs-10">
+						<h3>经典案例&nbsp;<small>SUCCESS CASE</small></h3><br/>
+		
+						<div class="row jfade_image">
+							<div class="col-md-3 jfade_image" ><img class="shadow" src="static/image/case/北京欢乐谷.png" /></div>
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/大河马水上世界.png" /></div>
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/福州贵安水世界.png" /></div>
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/抚顺热高乐园.png" /></div>
+						</div>
+						<br/><br/>
+						<div class="row jfade_image">
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/深圳欢乐谷.png" /></div>
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/深圳欢乐谷玛雅水公园.png" /></div>
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/沈阳方特欢乐世界.png" /></div>
+							<div class="col-md-3 jfade_image"><img class="shadow" src="static/image/case/泰州华侨城.png" /></div>
+						</div>
 					</div>
-
-
-
-
-
-
 				</div>
 			</div>
-		</div>	
-	</div>	
+		</div>
+	</div>
 
 	<div class="footer">
-
 		<div class="container">
 		    <div class="row">
-				<div class="inner-footer">
-					<div class="footer-left col-md-4">
+				<div class="inner-footer col-xs-offset-1 col-xs-10">
+
+					<div class="footer-left col-xs-4">
 						<p class="logo">
 							<img src="static/image/logo.png" />
 						</p>
@@ -164,43 +190,37 @@
 							盛世大元（辽宁）旅游产业有限公司，是一家旅游项目投资、开发、建设、管理、连锁、旅游产品研发及销售的多元化公司。
 						</p>
 					</div>
-					<div class="footer-center col-md-4">
+					<div class="footer-center col-xs-4">
 						<ul class="list-unstyled">
-							<li><a href="">首页</a></li>
-							<li><a href="">品牌服务</a></li>
-							<li><a href="">经典案例</a></li>
-							<li><a href="">核心团队</a></li>
-							<li><a href="">联系我们</a></li>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="services.html">品牌服务</a></li>
+							<li><a href="case.html">经典案例</a></li>
+							<li><a href="term.html">核心团队</a></li>
+							<li><a href="contact.html">联系我们</a></li>
 						</ul>
 					</div>
-					<div class="footer-right col-md-4">
+					<div class="footer-right col-xs-4 center">
 						<div class="contact">
-
-							<p>联系我们</p>
-							<dl>
-						      <dt>手机</dt>
-						      <dd>18642370111</dd>
-						      <dt>办公室电话</dt>
-						      <dd>0411-39192156</dd>
-						      <dt>传真</dt>
-						      <dd>0411-39192157</dd>
-						    </dl>
-							
+							<p><img src="static/image/qrcode.jpg" /></p>
 						</div>
 					</div>
+					<div class="clear"></div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<script >
-
-		$(document).ready(function() {
- 
-  $("#case").owlCarousel();
- 
-});
+	<script type="text/javascript"> 
+		$().ready(function() {
+			$('.jfade_image').jfade({
+				start_opacity: "1",
+				high_opacity: "1",
+				low_opacity: ".7",
+				timing: "500"
+			});
+		}); 
 	</script>
 </body>
 </html>
