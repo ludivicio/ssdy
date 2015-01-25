@@ -24,12 +24,16 @@ body{
 .header {
 	width: 100%;
 	height: 180px;
-	background-color: #9DC1D5;
-	/*border-bottom: 1px solid #222222;*/
+	background-color: #2580D5;
+	
+	border-bottom: 1px solid #9FC2DC;
 }
 
 .top {
+	/*width: 100%;*/
+	height: 180px;
 	position: relative;
+	background: url(../image/header.png) no-repeat;
 }
 
 .info {
@@ -66,7 +70,7 @@ body{
 	float: left;
 	width: 20px;
 	height: 20px;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .logo {
@@ -113,7 +117,8 @@ body{
   display: block;
   position: relative;
   z-index: 20;
-  color: #006E98;
+  /*color: #006E98;*/
+  color: #FFFFFF;
   -webkit-border-radius: 45px;
   -moz-border-radius: 45px;
   border-radius: 45px;
@@ -122,10 +127,13 @@ body{
 .banner .nav > li.active > a {
 	color: #FFFFFF;
 }
+.nav-pills>li>a:hover {
+	color: #006E98;
+}
 
-/*.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-	background-color: #428bca;
-}*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	background-color: #0177A3;
+}
 
 .wrapper {
 	
@@ -135,6 +143,7 @@ body{
 .flip {
 	/*height: 500px;*/
 	background-color: #0278BB;
+	padding: 0;
 }
 
 .flip .carousel-inner img {
@@ -148,16 +157,22 @@ body{
 .left-content {
 	float: left;	
 	padding: 0;
+
 }
 
-.left-content .login {
+/*.left-content .login {
 	margin-top: 30px;
 	padding: 0;
+}*/
+
+.left-content h3 small {
+	color: #2580D5;
 }
 
 .left-content .contact-us {
 	margin-top: 30px;
 }
+
 .left-content .contact-us p {
 	height: 25px;
 	line-height: 25px;
@@ -168,14 +183,26 @@ body{
 
 .right-content {
 	float: left;
-	padding: 30px 15px;
+	border-left: 1px solid #EAEAEA;
+	padding-left: 30px;
+	/*margin-top: 30px;*/
+	/*padding: 30px 15px;*/
 }
-
+.right-content h3 small {
+	color: #2580D5;
+}
+.right-content .company-profile {
+	margin-top: 30px;
+}
 
 .success-case {
 	margin-top: 30px;
 	padding: 30px 0 50px 0;
 	background-color: #F4F4F4;
+}
+
+.success-case h3 small {
+	color: #2580D5;
 }
 
 .success-case img, .success-case img:hover {
